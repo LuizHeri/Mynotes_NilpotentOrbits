@@ -423,9 +423,6 @@ INPUT chapters\Lie algebras.aux
 INPUT .\chapters\Nilpotent orbits.aux
 INPUT .\chapters\Nilpotent orbits.aux
 INPUT chapters\Nilpotent orbits.aux
-INPUT .\chapters\Kac_Moody_Algebras.aux
-INPUT .\chapters\Kac_Moody_Algebras.aux
-INPUT chapters\Kac_Moody_Algebras.aux
 INPUT .\chapters\Springer_correspondence.aux
 INPUT .\chapters\Springer_correspondence.aux
 INPUT chapters\Springer_correspondence.aux
@@ -602,12 +599,6 @@ OUTPUT chapters\Nilpotent orbits.aux
 INPUT .\chapters\Nilpotent orbits.tex
 INPUT .\chapters\Nilpotent orbits.tex
 INPUT chapters\Nilpotent orbits.tex
-INPUT .\chapters\Kac_Moody_Algebras.tex
-INPUT .\chapters\Kac_Moody_Algebras.tex
-OUTPUT chapters\Kac_Moody_Algebras.aux
-INPUT .\chapters\Kac_Moody_Algebras.tex
-INPUT .\chapters\Kac_Moody_Algebras.tex
-INPUT chapters\Kac_Moody_Algebras.tex
 INPUT .\chapters\Springer_correspondence.tex
 INPUT .\chapters\Springer_correspondence.tex
 OUTPUT chapters\Springer_correspondence.aux
@@ -622,9 +613,6 @@ INPUT chapters\Lie algebras.aux
 INPUT .\chapters\Nilpotent orbits.aux
 INPUT .\chapters\Nilpotent orbits.aux
 INPUT chapters\Nilpotent orbits.aux
-INPUT .\chapters\Kac_Moody_Algebras.aux
-INPUT .\chapters\Kac_Moody_Algebras.aux
-INPUT chapters\Kac_Moody_Algebras.aux
 INPUT .\chapters\Springer_correspondence.aux
 INPUT .\chapters\Springer_correspondence.aux
 INPUT chapters\Springer_correspondence.aux

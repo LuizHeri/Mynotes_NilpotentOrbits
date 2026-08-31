@@ -51,6 +51,37 @@
       \field{volume}{42}
       \field{year}{1997}
     \endentry
+    \entry{collingwood2017nilpotent}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=0df2c8b71ef9e43b5397523f2fc04d71}{%
+           family={Collingwood},
+           familyi={C\bibinitperiod},
+           given={David\bibnamedelima H},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=d5795f75db66ede40a181bd100c24bc5}{%
+           family={McGovern},
+           familyi={M\bibinitperiod},
+           given={William\bibnamedelima M},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \strng{fullhash}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \strng{fullhashraw}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \strng{bibnamehash}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \strng{authorbibnamehash}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \strng{authornamehash}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \strng{authorfullhash}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \strng{authorfullhashraw}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Nilpotent orbits in semisimple Lie algebra: an introduction}
+      \field{year}{2017}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

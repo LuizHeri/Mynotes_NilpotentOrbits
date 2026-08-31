@@ -500,7 +500,7 @@ We claim that if $W\in \fr{g}_s$, then $\ad(X)W\in \fr{g}_{s+1}$. To see this, a
 \subsection{Standard triples}
 For each $r\geq1$ we have an irreducible representation of $\fr{sl}_2$ on $\bbC^{r+1}$ given by:
 
-  \begin{equation}
+  \begin{equation}\label{equation: sl2 triples for sln}
     \begin{split}
         &\rho_r(X)=\begin{pmatrix}
 0&1&&&\\ &0&\rotatebox{-45}{$\cdots$}&&\\ &&\rotatebox{-45}{$\cdots$}&\rotatebox{-45}{$\cdots$}&\\&&&0&1\\&&&&0
@@ -791,7 +791,7 @@ There is some difference between mine and Collingwood notation:
         \end{center}
 
 
-De idea here is to classify nilpotent orbits by distinguished semisimple orbits. Here we will fix 
+The idea here is to classify nilpotent orbits by distinguished semisimple orbits. Here we will fix 
 a Cartan subalgebra $\fr{h}\subset \fr{g}$ with associated decomposition $\fr{g}=\bigoplus_{\alpha\in\Delta}\fr{g}_\alpha$.
 
 \begin{equation}
@@ -834,6 +834,17 @@ The idea is the following:
         \fr{g}^X=\bigoplus_{i\geq0}\fr{g}_i^X,\;\fr{g}_i^X=\fr{g}^X\cap\fr{g}_i
     \end{equation}
     and in a similar way: $\fr{g}^Y=\bigoplus_{i\leq0}\fr{g}_i^Y$.
+
+\begin{remark}
+    We have $H\in\fr{h}$, for some $\fr{h}$ Cartan sublgebra. Then, the triangular decomposition 
+    $\fr{g}=\bigoplus_{\alpha\in\Delta}\fr{g}_\alpha$ provides a diagonalization of $H$. Now, if we decompose 
+    $\fr{g}=\bigoplus_{i\in\bbZ}\fr{g}_i$ as a direct sum of $\fr{sl}_2\cong\bbC\langle X,H,Y\rangle-$modules, then 
+    \begin{equation}
+        \fr{g}_i = \bigoplus_\alpha \fr{g}_\alpha\cap \fr{g}_i
+    \end{equation}
+    because $\fr{g}_\alpha$ is a weight space for $\fr{sl}_2$. Therefore, for each $i$ such that
+    $\fr{g}_i\neq0$, there exist $\alpha\in\Delta$ such that $\fr{g}_\alpha\cap\fr{g}_i\neq0$ and $i=\alpha(H)$. 
+\end{remark}
 
 
 \begin{dang}
@@ -1043,6 +1054,133 @@ $\text{Diag}(1,0,-1)$. Then the associated weighted Dyinkin diagram is
 
 
 \section{Regular, subregular and minimal orbits}
+We have a partial ordering for the set of orbits defines as follows:
+\begin{equation}
+    \callO\leq \callO^\prime \iff \overline{\callO}\subset \overline{O}^\prime
+\end{equation}
+in the Zariski topology. The reflexive property is a consequence of the fact that in the Zariski topology, every
+orbit is open in its closure (see~\cite{collingwood2017nilpotent}). In fact, suppose that 
+$\callO \leq \callO^\prime$ and $\callO^\prime\leq \callO$, then $\overline{\callO}=\overline{\callO}^\prime$. Now, there exist 
+Zariski open set $U$ such that $\callO=\overline{\callO}\cap U=\overline{\callO}^\prime\cap U$. However, 
+by definition of the closure, there exist an element $x\in \callO^\prime\cap U \subset \callO$ and the orbits intersect. So they 
+are equal.
+
+\subsection{Regular and subregular orbit}
+The regular (or principal) orbit is the unique orbit of dimension $\dim(\fr{g})-\text{Rank}(\fr{g})$. 
+We construct it as follows, let $\fr{h}\subset \fr{g}$ be a Cartan subalgebra. Then we have a triangular decomposition 
+$\fr{g}=\fr{h}\oplus\bigoplus_{\alpha\in\Delta}\fr{g}_\alpha$. Choose a set of positive roots and let $\Pi$ be the 
+associated set of simple roots. Furthermore, let $H\in\fr{h}$ be such that $\alpha(H)=2,\;\forall\alpha\in\Pi$ 
+(we can do it because $\text{Span}(\Pi)=\fr{h}^*$). So we can write $H=\sum_{\alpha\in\Pi}a_\alpha H_\alpha$. Now define 
+\begin{equation}
+    X = \sum_{\alpha\in \Pi}X_\alpha\;\text{ and }Y=\sum_{\alpha\in \Pi}a_\alpha Y_\alpha.
+\end{equation}
+Then $\{Y,H,X\}$ forms a $\fr{sl}_2-$triple. The only nontrivial relation is 
+\begin{equation}
+    [X,Y]=\sum_{\alpha,\beta\in\Pi}a_\beta[X_\alpha,Y_\beta]=\sum_{\alpha\in\Pi} a_\alpha H_\alpha = H.
+\end{equation}
+In the last equation we only used the fact that $\alpha -\beta$ is never a root for simple roots $\alpha,\beta\in\Pi$. Since 
+$\alpha(H)=2,\;\forall\alpha\in\Pi$, we see that $\alpha(H)\in 2\bbZ,\;\forall\alpha\in\Delta$ and $\fr{g}_1=0$. Therefore 
+$\fr{g}_0=\fr{h}$ and the dimension formula follows. For uniqueness, it can be proven that $\overline{\callO}_X=\N$ the 
+nilpotent cone. This proves uniqueness.\par 
+
+The subregular orbit is the unique orbit of dimension $\dim(\fr{g})-\text{Rank}(\fr{g})-2$. See~\cite{collingwood2017nilpotent}
+for its existence and uniqueness.
+
+\subsection{Minimal orbit}
+
+The singleton $\{0\}$ is the unique orbit of 0 dimension, because $\fr{g}^X=\fr{g}\iff X\in Z(\fr{g})=(0)$, because 
+$\fr{g}$ is semisimple. There exist an unique orbit of minimal dimension (above 0) lying over $\{0\}$. Let 
+$\theta$ be the highest roots of $\Delta$. Remember that on $\Delta\cup\{0\}$, we have a partial relation defined by 
+$\gamma\geq\beta\iff \gamma-\beta=\sum_{\alpha\in\Pi}m_\alpha\alpha,\;m_\alpha\geq0\;\forall\alpha$. The minimal orbit is 
+the one containing $X=X_\theta$.
+
+
+\subsection{Dimension formula for the orbits}
+There is a nice formula for the dimension of the orbits in the case of $\fr{sl}_n$. Let 
+$\lambda = [d_1,\dots, d_r]$ with multiplicities $r_i = \#\{j:d_j=i\}$ and associated conjugated 
+partition with parts $s_i = \#\{j:d_j\geq i\}$. We have 
+\begin{equation}
+    \dim \callO_{\lambda} =  \sum_i s_i^2 - 1. 
+\end{equation}
+The idea is the following, let $V=\bbC^n$ be the standard representation of $\fr{sl}_n$ and let 
+$\{Y,H,X\}$ be the $\fr{sl}_2-$triple associated do the nilpotent element $X=X_\lambda$~(see equatio~\ref{equation: sl2 triples for sln}). 
+Decompose 
+\begin{equation}
+    V = \bigoplus_{d\geq0}M(d)
+\end{equation}
+where $M(d)$ is the isotypical component containing all the irreducible $\fr{sl}_2-$modules $V_d$ of highest weight $d$. Also, let 
+$L(d)\subset M(d)$ be the smaller weight subspace, so $\dim L(d)$ is the multiplicity of $V_d$ in $M(d)$. For example, 
+let $\lambda = [2,1^2]$, so we have 
+\begin{equation}
+    X_\lambda = \begin{pmatrix}
+        0&1&0&0\\
+         0&0&0&0\\
+          0&0&0&0\\
+           0&0&0&0
+    \end{pmatrix}
+\end{equation}
+and we have the following decomposion of $V$:
+\begin{center}
+    \begin{tikzcd}
+        &&e_3\arrow[r, "X"]&0&\\
+        &&e_4\arrow[r,"X"]&0&\\
+        &e_2\arrow[rr,"X"]&&e_1\arrow[r,"X"]&0
+    \end{tikzcd}
+\end{center}
+
+So $V=M(0)\oplus M(1)$, where $M(0)=L(0)=\bbC e_3 + \bbC e_4$ and $M(1)=\bbC e_1 + \bbC e_2$. Now, take a general partition 
+$\lambda$. We define a map 
+\begin{equation}
+   T_{d,e} : \fr{gl}_n^X \rightarrow \Hom(L(d), M(e)): Z\mapsto \pi_e\circ Z\circ \iota_d 
+\end{equation}
+where $\pi_e:V\to M(e)$ is the projection and $\iota_d:L(d)\to V$ is the inclusion. Now, we have 
+$M(d)=\bigoplus_{k\geq0}X^kL(d)$ and if $Z\in\fr{gl}_n^X$, then it's completely determined by its values on $L(d)$. 
+In particular, we have an injective map 
+\begin{equation}
+    \fr{gl}_n^X \hookrightarrow \bigoplus_{d\geq0}\Hom(L(d), V).
+\end{equation}
+So we construct another monomorphism
+\begin{equation}
+    \fr{gl}_n^X \hookrightarrow \bigoplus_{d,e\geq0}\Hom(L(d), M(e)): Z\mapsto (T_{d,e}(Z))_{d,e\geq0}.
+\end{equation}
+The idea, is that now we have to calculate $\dim(\fr{gl}_n^X)=\sum_{d,e\geq0}\dim T_{d,e}(\fr{gl}_n^X)$. Now, for each 
+Jordan Block of size $d+1$ ($d$ being a part of $\lambda$), we have an irreducible module $V_d\subset M(d)$. Therefore 
+$\dim L(d)$ is the number of parts in $\lambda$ equal to $d+1$, i.e., $\dim L(d)=r_{d+1}$. Now, let 
+$e\geq d$, then an irreducible $\fr{sl}_2-$module inside $M(e)$ consist of a string: 
+\begin{equation}
+    v_e \overset{X}{\to} v_{e-1}\overset{X}{\to}\cdots\overset{X}{\to} v_d\overset{X}{\to} \cdots v_1\overset{X}{\to} v_0\overset{X}{\to} 0 \quad(*)
+\end{equation}
+Let $v\in L(d)$, then since $X^{d+1} v =0$, we see that $Zv$ has zero component in the subspace 
+$\text{Span}\{v_e,\dots, v_{d+1}\}$ for any irreducible string $(*)$ inside $M(e)$. This proves that 
+matrices of $T_{d,e}(Z)$ projected to a string like $(*)$ are of the form 
+\begin{equation}
+    \begin{pmatrix}
+        \cdots&a_{0j}&\cdots\\
+         \vdots&\vdots&\vdots\\
+         \cdots&a_{dj}&\cdots\\
+         \cdots&0&\cdots\\
+         \vdots&\vdots&\vdots\\
+          \cdots&0&\cdots
+    \end{pmatrix}\quad(**)
+\end{equation}
+for $1\leq j\leq \dim L(d)=r_{d+1}$. Furthermore, since $Z\in\fr{gl}_n^X$, then it's completely determined by the collection of 
+matrices $(**)$.
+So, we have $(d+1)r_{d+1}$ choices for the coefficients for each one of the 
+$r_{e+1}$ string $(*)$ in $M(e)$. So we conclude that $\dim T_{d,e}(\fr{gl}_n^X)=(d+1)r_{d+1}r_{e+1},\;d\leq e$. In a similar way, 
+we prove that $\dim T_{d,e}(\fr{gl}_n^X)=(e+1)r_{d+1}r_{e+1},\;d>e$. Now write $S_{d,e}=\dim T_{d,e}(\fr{gl}_n^X)$, then 
+we see that $S_{d,e}=S_{e,d}$ and 
+\begin{equation}
+    \begin{split}
+        \sum_{d,e\geq0}S_{d,e}&=\sum_{d\geq0}S_{d,d} + 2\sum_{e>d\geq0}S_{d,e}\\
+        &=\sum_{d\geq0}(d+1)r_{d+1}^2 + 2\sum_{e>d\geq0}(d+1)r_{d+1}r_{e+1}\\
+        &=\sum_{d\geq0}(d+1)r_{d+1}(r_{d+1}+2r_{d+2}+2r_{d+3}+\cdots)\\
+        &=\sum_{d\geq0}(d+1)(s_d-s_{d+1})(s_d-s_{d+1} + 2s_{d+1})\\
+        &=\sum_{d\geq0}(d+1)(s_d-s_{d+1})(s_d+s_{d+1})\\
+        &=\sum_{i\geq0}s_i^2
+    \end{split}
+\end{equation}
+
+
 
 
 \section{Standard slices}

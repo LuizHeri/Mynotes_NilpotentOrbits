@@ -4,6 +4,16 @@ I am following the third chapter of~\cite{chriss1997representation}.
 \subsection{Variety of Borel subalgebras}
 As usual, $\fr{g}$ is a finite dimensional complex semisimple Lie algebra and $G$ its associated compact 
 Lie group.
+
+\begin{notation}
+    We write $\mathcal{B}$ for the set of all Borel subalgebras of a Lie algebra $\fr{g}$. It's a subvariety of 
+    the Grassmanian $\text{Gr}(\dim(\fr{g},\fr{b}))$. In fact, the vanishing of the derived series
+    \begin{equation}
+        \fr{b} \supset \fr{b}^{(1)}=[\fr{b},\fr{b}]\supset\cdots\supset \fr{b}^{(N)}=0
+    \end{equation}
+    is a polynomial condition.
+\end{notation}
+
 \begin{itemize}
     \item(Variety of Borel subalgebras). Let $\fr{b}\subset \fr{g}$ be a Borel subalgebra, i.e., a maximal 
     solvable subalgebra of $\fr{g}$. We have a bijection
@@ -92,7 +102,10 @@ We want to describe the Variety of Borel subalgebras of $\fr{g}=\fr{sl}_n$.
     \begin{lemma}
     We have a bijection 
 \begin{equation}
-    \{(F_0,F_1,\dots, F_n):F_i\subset F_{i+1},\dim(F_i)=i\}\to\mathcal{B}:F\mapsto \fr{b}_F=\{x\in\fr{g}:x(F_i)\subset F_i\}.
+    \begin{split}
+        &\mathcal{F}=\{(F_0,F_1,\dots, F_n):F_i\subset F_{i+1},\dim(F_i)=i\}\to\mathcal{B}\\
+        &F\mapsto \fr{b}_F=\{x\in\fr{g}:x(F_i)\subset F_i\}
+    \end{split}
 \end{equation}
 Here we have $F_i\subset \mathbb{C}^n$. 
 For $F = (F_0,F_1,\dots, F_n),g\in G$, we will write $gF=(gF_0,\dots, gF_n)$.
@@ -101,6 +114,9 @@ For $F = (F_0,F_1,\dots, F_n),g\in G$, we will write $gF=(gF_0,\dots, gF_n)$.
 Proof: We need to show that $\fr{b}_F$ is a Borel subalgebra. We can choose $A\in GL_n$ such 
 that $A(\mathbb{C}^i)=F_i,\;\forall i$, where $\bbC^i = \langle e_1,\dots, e_i\rangle$. To see this, write 
 $F_i = \langle v_1,\dots, v_i\rangle,\;\forall i$. If $v_i = \sum_j a_{ji}e_j$, then $Ae_j=v_j$. 
-Therefore, we get $A(0,\bbC,\dots,\bbC^n)=F$, the standard flag. Observe that since $AxA^{-1}=(A/\det(A)^{1/n})x(A/\det(A)^{1/n})^{-1}$, we 
+Therefore, we get $A(0,\bbC,\dots,\bbC^n)=F$, the standard flag. Observe that since 
+$AxA^{-1}=(A/\sqrt[n]{\det(A)})x(A/\sqrt[n]{\det(A)})^{-1}$, we 
 can assume $A\in SL_n$. Of course $\fr{b}_{(0,\bbC,\dots,\bbC^n )}=\fr{b}_0$, the standard Borel subalgebra of upper triangular matrices. 
 So $\fr{b}=\Ad_A(\fr{b}_0)$ is a Borel subalgebra. Finally, sujectivity follows from Lie's theorem (Lie algebra course).\qed
+
+\TODO prove that this bijection is in fact, an isomorphism of varieties.

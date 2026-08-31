@@ -16,5 +16,73 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{chriss1997representation}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=17a3b9db98a0798e74802225b8fc9180}{%
+           family={Chriss},
+           familyi={C\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=fd81af24de7d089fca02f6d0b3319d2d}{%
+           family={Ginzburg},
+           familyi={G\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{26b086df092ad76454b15314ef2968fd}
+      \strng{fullhash}{26b086df092ad76454b15314ef2968fd}
+      \strng{fullhashraw}{26b086df092ad76454b15314ef2968fd}
+      \strng{bibnamehash}{26b086df092ad76454b15314ef2968fd}
+      \strng{authorbibnamehash}{26b086df092ad76454b15314ef2968fd}
+      \strng{authornamehash}{26b086df092ad76454b15314ef2968fd}
+      \strng{authorfullhash}{26b086df092ad76454b15314ef2968fd}
+      \strng{authorfullhashraw}{26b086df092ad76454b15314ef2968fd}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Representation theory and complex geometry}
+      \field{volume}{42}
+      \field{year}{1997}
+    \endentry
+    \entry{collingwood2017nilpotent}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=0df2c8b71ef9e43b5397523f2fc04d71}{%
+           family={Collingwood},
+           familyi={C\bibinitperiod},
+           given={David\bibnamedelima H},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=d5795f75db66ede40a181bd100c24bc5}{%
+           family={McGovern},
+           familyi={M\bibinitperiod},
+           given={William\bibnamedelima M},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \strng{fullhash}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \strng{fullhashraw}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \strng{bibnamehash}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \strng{authorbibnamehash}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \strng{authornamehash}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \strng{authorfullhash}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \strng{authorfullhashraw}{3c179d5052abd47e0f8dc89fddc5c09b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Nilpotent orbits in semisimple Lie algebra: an introduction}
+      \field{year}{2017}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

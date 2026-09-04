@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.7)  31 AUG 2026 20:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.7)  1 SEP 2026 17:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1375,22 +1375,22 @@ Overfull \hbox (18.80585pt too wide) in paragraph at lines 624--627
 \T1/lmr/m/n/10.95 which is a fi-nite sum, be-cause $\U/euf/m/n/10.95 u[]$ \T1/lmr/m/n/10.95 is nilpo-tent. More-over $\U/euf/m/n/10.95 u[] \OT1/lmr/m/n/10.95 = [][] \U/euf/m/n/10.95 g[]$ \T1/lmr/m/n/10.95 is $[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 H\OT1/lmr/m/n/10.95 )\OMS/lmsy/m/n/10.95 ^^@$\T1/lmr/m/n/10.95 invariant
  []
 
-[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96]) [97]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96] [97]) [98]
 \openout2 = `chapters/Springer_correspondence.aux'.
 
  (chapters/Springer_correspondence.tex
 Chapter 3.
-[98
+[99
 
 
 
 
-] [99]) [100]
+] [100]) [101]
 \openout2 = `bibliography.aux'.
 
 
 No file bibliography.tex.
-[101
+[102
 
 
 
@@ -1409,17 +1409,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44946 strings out of 467871
- 897060 string characters out of 5418376
- 1769867 words of memory out of 5000000
+ 44948 strings out of 467871
+ 897082 string characters out of 5418376
+ 1769868 words of memory out of 5000000
  72340 multiletter control sequences out of 15000+600000
  705336 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  132i,25n,135p,3347b,1404s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/doublestroke/dsrom10.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/doublestroke/dsrom8.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/herin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (102 pages, 890555 bytes).
+Output written on main.pdf (103 pages, 892830 bytes).
 PDF statistics:
- 1556 PDF objects out of 1728 (max. 8388607)
- 716 named destinations out of 1000 (max. 500000)
+ 1562 PDF objects out of 1728 (max. 8388607)
+ 718 named destinations out of 1000 (max. 500000)
  508 words of extra memory for PDF output out of 10000 (max. 10000000)
 

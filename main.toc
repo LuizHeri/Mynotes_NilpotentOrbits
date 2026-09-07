@@ -38,8 +38,9 @@
 \contentsline {subsection}{\numberline {2.5.1}Regular and subregular orbit}{88}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Minimal orbit}{89}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Dimension formula for the orbits}{89}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Standard slices}{91}{section.2.6}%
-\contentsline {section}{\numberline {2.7}An isomorphism of Weyl groups}{94}{section.2.7}%
+\contentsline {section}{\numberline {2.6}Bala - Carter theory}{91}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Standard slices}{92}{section.2.7}%
+\contentsline {section}{\numberline {2.8}An isomorphism of Weyl groups}{94}{section.2.8}%
 \contentsline {chapter}{\numberline {3}Springer correspondence}{99}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Springer Fibers}{99}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Variety of Borel subalgebras}{99}{subsection.3.1.1}%

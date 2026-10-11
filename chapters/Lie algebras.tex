@@ -812,11 +812,26 @@ Finally (2) is a direct consequence of (1) and the previous sections.\qed
         \begin{equation}
             c(x_1v_1 +\cdots+x_nv_n)=p(x_1,\dots,x_n).
         \end{equation}
+        That is, for every isomorphism $T:V\to\bbC^n$, there exists $p\in k[X_1,\dots,X_n]$ such that 
+            \begin{center}
+                \begin{tikzcd}
+                    V\arrow[r,"T"]\arrow[d,swap,"c"] & \bbC^n\arrow[dl, dashed,"p"] \\ \bbC
+                \end{tikzcd}
+            \end{center}
     \end{definition}
 \end{dang}
 It's clear from the previous definition that if $c:V\to \bbC$ is a polynomial, then for any choice of basis, the corresponding map 
 $(x_1,\dots,x_n)\mapsto  c(x_1v_1+\cdots+x_nv_n)$ is a polynomial. Furthermore, it's clear that the space of polynomials in $V$
-is a ring.
+is a $\bbC-$algebra. 
+
+\begin{dang}
+    \begin{proposition}
+        The algebra of polynomial functions on $V$ is isomorphic to the symmetric algebra $\text{Sym}(V^*)$.
+    \end{proposition}
+\end{dang}
+Proof: Choose a basis $\{v_1,\dots,v_n\}$ of $V$ and let $\alpha_1,\dots, \alpha_n$ be the associated coordinate functions, i.e., 
+$\alpha_i(v_j)=\delta_{ij}$. Now, let $S:\bbC^n\to V:e_i\mapsto v_i$, where $e_i$ denotes the $i$th coordinate vector. Then 
+$k[X_1,\dots,X_n]\to \text{Sym}(V^*):X_i\mapsto \alpha_i$ defines a vector space isomorphism.\qed
 
 \begin{dang}
     \begin{lemma}
@@ -1336,7 +1351,7 @@ that we actualy have equality, i.e., the two definitions of rank coincide. To se
 $\ell=\text{Rank}^\prime(\fr{g})$ and $n=\dim(\fr{g})$, then
 \begin{equation}
     \begin{split}
-       \dim(Z^{\fr{g}}(X)) \text{ is not minimal }=\ell&\iff \text{Rank}(\ad(X))\text{ is not maximal }=n-\ell\\
+       \dim(Z^{\fr{g}}(X)) \text{ is not minimal }=\ell&\iff \text{Rank}(\ad(X))\text{ is not maximal } = n-\ell\\
         &\iff \text{all }(n-\ell)\times(n-\ell)-\text{minors of }\ad(X)\text{ vanishes}.
     \end{split}
 \end{equation} 

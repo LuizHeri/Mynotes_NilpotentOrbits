@@ -605,6 +605,8 @@ OUTPUT chapters\Springer_correspondence.aux
 INPUT .\chapters\Springer_correspondence.tex
 INPUT .\chapters\Springer_correspondence.tex
 INPUT chapters\Springer_correspondence.tex
+INPUT C:\Users\herin\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
+INPUT C:\Users\herin\AppData\Local\Programs\MiKTeX\fonts\tfm\public\doublestroke\dsrom12.tfm
 OUTPUT bibliography.aux
 INPUT main.aux
 INPUT .\chapters\Lie algebras.aux

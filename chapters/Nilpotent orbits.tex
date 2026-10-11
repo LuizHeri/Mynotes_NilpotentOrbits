@@ -20,9 +20,11 @@
     $\psi:G\times M\to M$ is a smooth map such that $\psi_g=\psi(g,\cdot)$ defines a homomorphism 
     $G\to\text{Diff}(M):g\mapsto \psi_g$. An infinitesimal generator of $\psi$ is a vector field defined by 
     \begin{equation}
-        u_M(x)=\frac{d}{dt}\bigg|_{t=0}\psi_{\exp(tu)}(X).
+        u_M(x)=\frac{d}{dt}\bigg|_{t=0}\psi_{\exp(tu)}(x).
     \end{equation}
-    This defines a map $\fr{g}\to\fr{X}(M):u\mapsto u_M$ which we will show to be a Lie algebra anti-homomorphism.
+    This defines a map $\fr{g}\to\fr{X}(M):u\mapsto u_M$ which we will show to be a Lie algebra anti-homomorphism. Furthermore, 
+    it's clear that $u_M(x)=0\iff \psi_{\exp(tu)}(x)\equiv \text{cte},\forall t\in\bbR$, that is the zero points of the vector field induced by $u\in\fr{g}$
+    are precisely the fixed points of the infinitesimal $u$ action on $G$. 
     \begin{example}
         (infinitesimal generator of $\Ad$). Consider the adjoint action $G\times\fr{g}\to\fr{g}$. We have 
         \begin{equation}
@@ -43,7 +45,7 @@
             \item[1.] Let $\varphi:M_1\to M_2$ be a $G$ equivariant map, i.e., $\varphi(gx)=g\varphi(x),\;\forall x\in M_1$, then 
             for any $u\in\fr{g}$, we have $u_{M_1}\sim_\varphi u_{M_2}$.
             \item[2.] Let $M$ be a $G$-manifold, then $\fr{g}\to\fr{X}(M):u\mapsto u_M$ is a Lie algebra anti-homomorphism. 
-            In fact, the result is true for $(G,\psi(g,\cdot)=r_{g^{-1}})$. This follows frmo the equation 
+            In fact, the result is true for $(G,\psi(g,\cdot)=r_{g^{-1}})$. This follows from the equation 
             \begin{equation}
                 u_G(g)=\frac{d}{dt}\bigg|_{t=0}r_{\exp(-tu)}(g)=-u^L(g).
             \end{equation}

@@ -1,15 +1,15 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'main.blg'
-[127] biber-MSWIN64:342> INFO - === 
-[170] Biber.pm:421> INFO - Reading 'main.bcf'
-[259] Biber.pm:1002> INFO - Found 2 citekeys in bib section 0
-[272] Biber.pm:4487> INFO - Processing section 0
-[282] Biber.pm:4678> INFO - Looking for bibtex file 'bibliography.bib' for section 0
-[346] bibtex.pm:1713> INFO - LaTeX decoding ...
-[352] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
-[380] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[380] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[380] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[380] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[383] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[384] bbl.pm:779> INFO - Output to main.bbl
+[85] biber-MSWIN64:342> INFO - === 
+[121] Biber.pm:421> INFO - Reading 'main.bcf'
+[204] Biber.pm:1002> INFO - Found 2 citekeys in bib section 0
+[213] Biber.pm:4487> INFO - Processing section 0
+[221] Biber.pm:4678> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[276] bibtex.pm:1713> INFO - LaTeX decoding ...
+[282] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[310] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[310] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[310] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[310] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[312] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[313] bbl.pm:779> INFO - Output to main.bbl

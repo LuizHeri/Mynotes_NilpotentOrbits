@@ -1,18 +1,34 @@
 \chapter{Springer correspondence}
 I am following the third chapter of~\cite{chriss1997representation}. 
-\section{Springer Fibers}
+\section{Semisimple Lie algebras and flag varieties}
 \subsection{Variety of Borel subalgebras}
 As usual, $\fr{g}$ is a finite dimensional complex semisimple Lie algebra and $G$ its associated compact 
-Lie group.
-
-\begin{notation}
-    We write $\mathcal{B}$ for the set of all Borel subalgebras of a Lie algebra $\fr{g}$. It's a subvariety of 
-    the Grassmanian $\text{Gr}(\dim(\fr{g},\fr{b}))$. In fact, the vanishing of the derived series
+Lie group.\par
+    
+We write $\mathcal{B}$ for the set of all Borel subalgebras of a Lie algebra $\fr{g}$. It's a subvariety of 
+the Grassmanian $\text{Gr}_{d}(\fr{g}),\;d=\dim(\fr{b})$. In fact, the vanishing of the derived series
     \begin{equation}
         \fr{b} \supset \fr{b}^{(1)}=[\fr{b},\fr{b}]\supset\cdots\supset \fr{b}^{(N)}=0
     \end{equation}
-    is a polynomial condition.
-\end{notation}
+is a polynomial condition on a homogeneou polynomial. In fact, rememember the Plucker embedding:
+    \begin{equation}
+        \Gr_{d}(\fr{g})\hookrightarrow \bbP(\bigwedge^{d}\fr{g}) 
+    \end{equation}
+and let $\fr{b}\in \mathcal{B}$. Let $\{x_1,\dots,x_n\}$ be a basis of $\fr{g}$ and
+assume that $\fr{b}$ has a basis of the form $y_i = x_i+\sum_{j>i}a_{ij}x_j,\;i=1,\dots,d$. Then 
+\begin{equation}
+    [\fr{b},\fr{b}] = \bigoplus_{i,j,k,l,\mu}\bbC a_{ik}a_{jl}c_{kl}^\mu e_\mu, \; a_{ij}=1\;(i>j)\text{ and } a_{ii}=1.
+\end{equation}
+where $[e_k,e_l]=\sum_k c_{ij}^ke_k$. So, if we take the coordinate $U_{(1,\dots,d)}$ of $\Gr_{d}(\fr{g})$, we see that 
+the condition $a_{ik}a_{jl}c_{kl}^\mu=0,\;\forall i,k,j,l,\mu$ is a polynomial condition on 
+$\fr{b}$. In fact, in this coordinate, $\fr{b}$ has coordinate expression 
+$\det(a_{ij_k})_{i,k=1}^{d},\;1\leq j_1<\cdots<j_{d}\leq n$ which projects isomorphically onto 
+$(a_{ij}:j>d)\in\bbC^{d(n-d)}$. In general, if 
+$\fr{a}\in U_{(1,\dots,d)}$ and $\fr{a}=\bigoplus f_\mu(a)e_\mu$, where $f_\mu$ are monomials in the $a$'s, then 
+\begin{equation}
+    [\fr{a},\fr{a}]=\bigoplus c_{\mu\lambda}^\nu f_\mu(a)f_\lambda(a)e_\nu.
+\end{equation}
+So $[\fr{a},\fr{a}]=0$ is a polynomial condition on the coordinate functions of $\fr{a}$ in $U_{(1,\dots,d)}$. 
 
 \begin{itemize}
     \item(Variety of Borel subalgebras). Let $\fr{b}\subset \fr{g}$ be a Borel subalgebra, i.e., a maximal 
@@ -23,7 +39,7 @@ Lie group.
     where $B=\text{Stab}_G(\fr{b})$ through the adjoint action. In fact, $B$ is just the compact form of $\fr{b}$, that is 
     $\text{Lie}(B)=\fr{b}$.
     \item(Bruhat decomposition). Now write $\fr{b}_0=\text{Lie}(B)$. 
-    By equation~(\ref{equation : Ad action of G on mathcalB}), we see that there exsit an unique 
+    By equation~(\ref{equation : Ad action of G on mathcalB}), we see that there exists a unique 
     $gB$ such that $\Ad_g(\fr{b}_0)=\fr{b}$, so $\Ad_B(\fr{b})=\Ad_{BgB}(\fr{b}_0)$. This gives a surjection:
     \begin{equation}\label{equation : first map}
         B\backslash G/B \rightarrow\{B-\text{orbits on }\mathcal{B}\}:BgB\mapsto \Ad_{BgB}(\fr{b}_0).
@@ -38,11 +54,11 @@ Lie group.
     \end{remark}
     Furthermore, we have the Bruhat decomposition, which states that 
     \begin{equation}\label{equation : Bruhat decomposition}
-        W \rightarrow B\backslash G/B: w \mapsto BwB
+        W_T \rightarrow B\backslash G/B: w \mapsto BwB
     \end{equation}
     is a bijection. Here we are viweing $W_T$ in the sense of section~(\ref{section: isom of Weyl groups}).
     \begin{example}
-        If $G=GL_n$, then $B=\begin{pmatrix}a&b\\0&d\end{pmatrix}$. Now, if $c\neq0$, then 
+        If $G=GL_2$, then $B=\left\{\begin{pmatrix}a&b\\0&d\end{pmatrix}\in GL_2\right\}$. Now, if $c\neq0$, then 
         \begin{equation}
           \begin{pmatrix}
             a&b&1&0\\c&d&0&1
@@ -85,26 +101,77 @@ Lie group.
     \begin{theorem}
         All of the above maps are bijections:
         \begin{equation}
-            W \to B\backslash G/B\to \{B-\text{orbits on }\mathcal{B}\}\to
+            W_T \to B\backslash G/B\to \{B-\text{orbits on }\mathcal{B}\}\to
               \left\{\begin{matrix}G-\text{diagonal orbits }\\\text{on }G/H\times G/H\end{matrix}\right\}
         \end{equation}
     \end{theorem}
+
+    The hard part of the above theorem is to show that $W\to \{B-\text{ orbits on }\mathcal{B}\}$ is a bijection. 
+    \begin{theorem}
+        Let $X$ be a smooth, projective algebraic variety and consider an algebraic action $\phi:\bbC^\times\times X\to X$. 
+        Then this action has at least one fixed point: For any point $x\in X$
+        $\lim_{z\to 0}\phi_z(x), \lim_{z\to\infty}\phi_z(x)$ are fixed by $\bbC^*$. Denote by $W$ be the set of 
+        fixed point of the action of $\bbC^*$ on $X$ and assume it to be finite. Furthermore, denote 
+        $X_w = \{x\in X:\lim_{z\to0}\phi_z(x)=w\}$, where $w\in W$. Then we have 
+        \begin{itemize}
+            \item[(1)] $X=\coprod_{w\in W}X_w$ is a decomposition of $X$ into smooth locally closed algebraic subvarieties;
+            \item[(2)] There are natural isomorphisms of algebraic varieties $X_w\cong T_w(X_w) = T_w^+X$ which 
+            commute with the $\bbC^*-$action.
+        \end{itemize} 
+    \end{theorem}
+    As an example, we take the action $\bbC^*\times \bbP^1\to \bbP^1:(z,[x_0,x_1])\mapsto [x_0,zx_1]$. On chart $U_0$ we have
+    $\varphi_0\phi_z\varphi_0^{-1}(x)=\varphi_0([1,zx])=zx$. The only fixed point is $x=0$ at this chart. We see that 
+    the fixed points for the action of $\bbC^*$ is $0=[1,0]$ and $\infty=[0,1]$, i.e., $W=\{0,\infty\}$. 
+    At the level of tangent spaces we have 
+    \begin{center}
+        \begin{tikzcd}
+            T_0\bbP^1\arrow[r]\arrow[d]&T_0\bbP^1\arrow[d]&   &T_\infty\bbP^1\arrow[r]\arrow[d]&T_\infty\bbP^1\arrow[d]\\
+            T_{0}\arrow[r,swap,"z\cdot"]U_0&T_{0}U_0&
+            &T_{\infty}U_1\arrow[r,swap,"z^{-1}\cdot"]&T_{\infty}U_1
+        \end{tikzcd}
+    \end{center}
+    Therefore 
+    \begin{equation}
+        \begin{aligned}
+            &T_0^+\bbP^1=\bbC,\; T_0^{-}\bbP^1 = 0\\
+            &T_\infty^+\bbP^1=0,\; T_\infty^{-}\bbP^1 = \bbC
+        \end{aligned}
+    \end{equation}
+    Furthermore $X_0=\bbC$ and $X_\infty=\{\infty\}$ which are locally closed algebraic subvarieties.\par 
+
+    \TODO proof of theorem 3.1.9 in~\cite{chriss1997representation}. 
+    (Here is some sketch to come back latter):
+
+
     \begin{remark}
-        Aparently, show that the composition of the first two maps 
+        (see~\cite{chriss1997representation} corollary 3.1.6). $\fr{b}\in\mathcal{B}$ is the zero point 
+        of the vector field on $\mathcal{B}$ associated to $x\in\fr{g}$ implies that 
+        $x\in\fr{b}$. This follows because 
         \begin{equation}
-            W \to \{B-\text{orbits on }\mathcal{B}\}
+            \frac{d}{dt}\bigg|_{t=0}\Ad_{\exp(tx)}(\fr{b})=0\iff [x,\fr{b}]=\fr{b}\iff x\in\fr{b}
         \end{equation}
-        is a bijection, is highly nontrivial (see~\cite{chriss1997representation}).
+        because $\fr{b}$ is a maximal solvable subalgebra, so $\fr{b}+\bbC x = \fr{b}$.
+        Furthermore,
+        let $\bbC^*\subset T_{\bbC}$ be a one parameter subgroup associated to $h\in\fr{h}^\prime$, where 
+        \begin{equation}
+            \fr{h}^\prime =\{X\in \fr{h}: \alpha(X)\neq0,\forall \alpha\in\Delta_+\}
+        \end{equation}
+        is the set of regular elements in $\fr{h}$. Then, a 
+        $\bbC^*-$fixed point $\fr{b}\in\mathcal{B}$ is the zero of the infinitesimal action of 
+        $h\in\fr{h}$ if and only if $\fr{h}\subset\fr{b}$. Furthermore, let 
+        $\fr{b}\in\mathcal{B}$, then $\Ad_t(\fr{b})=\fr{b},\;\forall t\in T$ if and only if 
+        $T\subset B$ and $\fr{h}=\text{Lie}(T)_{\bbC}\subset \fr{b}$. 
     \end{remark}
 \end{itemize}
-We want to describe the Variety of Borel subalgebras of $\fr{g}=\fr{sl}_n$. 
+
+As an example, we will describe the Variety of Borel subalgebras of $\fr{g}=\fr{sl}_n$. 
 \begin{dang}
     \begin{lemma}
     We have a bijection 
 \begin{equation}
     \begin{split}
-        &\mathcal{F}=\{(F_0,F_1,\dots, F_n):F_i\subset F_{i+1},\dim(F_i)=i\}\to\mathcal{B}\\
-        &F\mapsto \fr{b}_F=\{x\in\fr{g}:x(F_i)\subset F_i\}
+        &\psi:\mathcal{F}=\{(F_0,F_1,\dots, F_n):F_i\subset F_{i+1},\dim(F_i)=i\}\to\mathcal{B}\\
+        &\quad F\mapsto \fr{b}_F=\{x\in\fr{g}:x(F_i)\subset F_i\}
     \end{split}
 \end{equation}
 Here we have $F_i\subset \mathbb{C}^n$. 
@@ -119,4 +186,201 @@ $AxA^{-1}=(A/\sqrt[n]{\det(A)})x(A/\sqrt[n]{\det(A)})^{-1}$, we
 can assume $A\in SL_n$. Of course $\fr{b}_{(0,\bbC,\dots,\bbC^n )}=\fr{b}_0$, the standard Borel subalgebra of upper triangular matrices. 
 So $\fr{b}=\Ad_A(\fr{b}_0)$ is a Borel subalgebra. Finally, sujectivity follows from Lie's theorem (Lie algebra course).\qed
 
-\TODO prove that this bijection is in fact, an isomorphism of varieties.
+The above bijection is an isomorphism of varietes. A small example can give the general idea behind this claim. Let 
+$n=2$, then $d=\dim(\fr{b})=2$ and a flag $F\in\mathcal{B}$ is defined by the choice of a one dimensional subspace of 
+$\bbC^2$. So we write $F=\bbC v$ and we will assume that $v=e_1 + ae_2$. We have 
+\begin{equation}
+    \psi|_U: U=U_{(1)}\times U_{(1,2)}\cap\mathcal{F}(\bbC^2)\rightarrow\mathcal{B}\subset \Gr_2(\fr{sl}_2):
+    U\ni F\mapsto \fr{b}_F
+\end{equation}
+Since $F=\langle e_1+ae_2, e_2\rangle$, we take the change basis matrix $A=\left(\begin{smallmatrix}1&0\\a&1\end{smallmatrix}\right)$
+(here, the columns represents the basis vectors of the flag). In this condition we have 
+\begin{equation}
+    \fr{b}_F=\Ad_A(\fr{b}_0)=\Ad_A(\bbC h+\bbC e)=\langle h + 2af, e -ah-a^2f\rangle.
+\end{equation}
+Fixing the basis $\{e,h,f\}$, we see that $\fr{b}_F$ has a matrix representative of the form 
+$\left(\begin{smallmatrix}1&-a&-a^2\\0&1&2a\end{smallmatrix}\right)$. Then we get the diagram 
+\begin{center}
+    \begin{tikzcd}
+      F=\langle e_1+ae_2\rangle\arrow[r,mapsto,"\psi"]&\fr{b}_F=\langle h + 2af, e -ah-a^2f\rangle\arrow[d,mapsto,"\varphi_{(1,2,3)}"]\\           
+      \{(2)\mapsto a\}\arrow[u,mapsto,"\varphi_{(1)}"]\arrow[r,mapsto,dashed]&\{(1,3)\mapsto 2a, (2,3)\mapsto -a^2\}
+    \end{tikzcd}
+\end{center}
+So, in affine coordinates, we get a map which is polynomial on each affine coordinate. 
+The core idea here is that whenever $F\in U_{(1)}\times\cdots\times U_{(1,\dots,d-1)}\times U_{(1,\dots,d)}$, we can assume 
+that $F$ has matrix representative of the form $A=(a_{ij}),\;a_{ii}=1\;\forall i,a_{ij}=0\;(i>j)$. Therefore $\det(A)=1$ and if 
+$\{x_1,\dots,x_n\}$ is a basis of $\fr{g}$, then for $x\in\fr{g}$ we have 
+$\Ad_A(x)=\sum f_j(a)x_j$, where $f_j$ are polynomials in the $a$'s. 
+
+\subsection{\texorpdfstring{Universal resolution of $\mathfrak{g}$}{Universal resolution of \text{g}}}
+\begin{dang}
+    \begin{definition}
+        The  algebraic variety 
+        \begin{equation}
+            \tilde{\fr{g}} = \{(x,\fr{b})\in\fr{g}\times\callB:x\in\fr{b}\}.
+        \end{equation}
+        is called the unviersal resolution of $\fr{g}$.
+    \end{definition}
+\end{dang}
+To see that $\tilde{g}\subset \fr{g}\times\callB$ is closed, fix $\fr{b}\in\callB$. Then we can identify 
+$\tilde{\fr{g}}=\{(x,gB)\in\fr{g}\times G/B: \Ad_{g^{-1}}(x)\in\fr{b}\}$. Also, we have two maps 
+\begin{equation}
+    \begin{split}
+        &\varphi:\fr{g}\times G\to \fr{g}\times\callB:(x,g)\mapsto (x,\Ad_g(\fr{b}))\\
+        &\psi:\fr{g}\times G\to \fr{g}: (x,g)\mapsto \Ad_{g^{-1}}(x)
+    \end{split}
+\end{equation}
+Then $\varphi^{-1}(\tilde{g})=\psi^{-1}(\fr{b})$ is closed and since $\varphi$ is an open map 
+\textcolor{red}{(verify this)} we obtain that $\tilde{\fr{g}}$ is closed.
+
+\begin{remark}
+    Let $X$ be an algebraic variety. Then, a surjective map $\pi: E\to X$ is a vector bundle of rank $r$ if 
+    each fiber $E_p =\pi^{-1}(p)$ is a vector space and for each $x\in X$ there exists an open 
+    set $U\ni x$, an isomorphism $\varphi_U$ such that 
+    \begin{center}
+        \begin{tikzcd}
+           E|_U=\pi^{-1}\arrow[rr,"\varphi_U"]\arrow[dr] &&U\times k^r\arrow[ld] \\ &U&
+        \end{tikzcd}
+    \end{center}
+    and $E|_p\to \{p\}\times k^r$ is a linear isomorphism.
+\end{remark}
+We see that $\tilde{\fr{g}}$ is a vector bundle over $\callB$. In fact, each fiber $\tilde{\fr{g}}|_{\fr{b}}=\fr{b}\times\{\fr{b}\}$ 
+has a vector space structure. Furthermore, it's a fact that the projection $q:G\to G/B$ has local section so we can use it 
+to define local trivializations as follows. Identify $\callB\cong G/B$ for a fixed $B$ and let $U\subset G/B$ be an open set 
+such that there exists a local section $s:U\to G,\;q\circ s = \mathds{1}_U$. Then we define 
+$\tilde{\fr{g}}|_U\to \fr{b}\times U:(x,gB)\mapsto (\Ad_{s(gB)^{-1}}(x),gB)$. This formula makes sense because 
+$q(s(gB))=gB$ means that $s(gB)B=gB$, so $\Ad_{s(gB)}(\fr{b})=\Ad_g(\fr{b})$. 
+\begin{example}
+    If $G=GL_2$, we have the map $G\to \bbP^1:g\mapsto [ge_1]$. That is, it sends the matrix 
+    $\left(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right)\mapsto (a:c)$. Its descensds to 
+    a bijection $gB\mapsto [ge_1]$. We identify $G/B=\bbP^1$ using this bijection, so we define sections  
+    \begin{equation}
+        \begin{split}
+            &U_0=\{a\neq0\}\to G:(1:z)\mapsto \left(\begin{smallmatrix}1&0\\z&1\end{smallmatrix}\right)\\
+            &U_1={c\neq0}\to G: (w:1)\mapsto \left(\begin{smallmatrix}w&-1\\1&0\end{smallmatrix}\right)
+        \end{split}
+    \end{equation}
+\end{example}
+
+We also define the map $\mu:\tilde{\fr{g}}\to \fr{g}$ to be the projection in first coordinate. We denote 
+$\mu^{-1}(x)=\{x\}\times\callB_x$, so $\callB_x=\{\fr{b}:\fr{b}\ni x\}$. It satisfies two properties 
+\begin{itemize}
+    \item[(a)] $x=0\Rightarrow \mu^{-1}(0)=\callB$
+    \item[(b)] $x=\fr{g}^{\text{sr}}\Rightarrow \#\callB_x=\#W$. 
+\end{itemize}
+The second one is a consequence of the fact that $\fr{b}\ni x\iff \fr{h}\subset \fr{b}$ where 
+$\fr{h}$ is a fixed Cartan subaglebra containing $x$ (its exists $x\in\fr{g}^{\text{sr}}$). Let 
+$T$ be the maximal torus of $G$ such that $\text{Lie}(T)=\fr{h}$. Then $\fr{b}\supset\fr{h}$ if and only if 
+$\fr{b}$ is a $T$-fixed point of $\callB$. It's a fact that these fixed points are in bijection with 
+elements $W_T$ (see \cite{chriss1997representation} lemma 3.1.10). 
+\begin{dang}
+    \begin{proposition}
+        Let $\fr{b},\fr{b}^\prime$ be two borel subalgebras. Then there exists a unique 
+        $gB\in G/B,\;\text{Lie}(B)=\fr{b}$ such that 
+        $\phi_{\fr{b}\fr{b}^\prime}: \fr{b}/[\fr{b},\fr{b}]\to \fr{b}^\prime/[\fr{b}^\prime,\fr{b}^\prime]$
+        maps $x\mod[\fr{b},\fr{b}]\mapsto \Ad_g(x)\mod[\fr{b}^\prime,\fr{b}^\prime]$.
+    \end{proposition}
+\end{dang}
+Proof: It's a fact in the theory of Lie groups that $N_G(B)=B$, so $\Ad_g(\fr{b})=\fr{b}\iff g\in B$. Furthermore, from the theory 
+of Lie algebras, we know that all Borel subalgebras are conjugate. Let $g\in G$ be such that $\Ad_g(\fr{b})=\fr{b}^\prime$. Then 
+we need to show that if $g^\prime = gb,b\in B$, their adjoint action induces the same morphism. However, if 
+$x,y\in \fr{b}$, then 
+\begin{equation}
+    (\Ad_{\exp(y)}-\mathds{1})x = \sum_{n\geq1}\frac{1}{n!}\ad(y)^nx\in[\fr{b},\fr{b}].
+\end{equation}
+So $\Ad_b(x)=x\mod[\fr{b},\fr{b}]$ for $b\in B$.\qed
+
+\begin{dang}
+    \begin{definition}
+        The abstract Cartan subalgebra is the vector space
+        \begin{equation}
+        \callH = (\bigsqcup_{\fr{b}\in\callB}\frac{\fr{b}}{[\fr{b},\fr{b}]} )\bigg/ \sim 
+        \end{equation}
+        where we let $(x,\fr{b})\sim (x^\prime,\fr{b}^\prime)\iff \phi_{\fr{b}\fr{b}^\prime}(x)=x^\prime$.
+    \end{definition}
+\end{dang}
+
+\begin{remark}
+    Let $\fr{g}$ be a semisimple Lie algebra, then a choice of Cartan subaglebra $\fr{h}\subset\fr{g}$ induces 
+    a collection of roots given by the weight space decomposition of the adjoint action. Now, let 
+    $\fr{h}\subset\fr{b}$ be a Borel subalgebra. It's a fact that $[\fr{b},\fr{b}]$ is the set of 
+    all nilpotent elements of $\fr{b}$ and $\fr{b}=\fr{h}\oplus[\fr{b},\fr{b}]$. Furthermore, there exists 
+    a choice of positive roots such that $[\fr{b},\fr{b}]=\sum_{\alpha\in\Delta_+}\bbC X_\alpha$. So a choice of a pair 
+    $(\fr{h},\fr{b})$ induces a choice of simple roots of $\fr{g}$.
+\end{remark}
+
+By fixing a pair $(\fr{h},\fr{b})$, we get a natural isomorphism of vector spaces 
+\begin{equation}
+    \fr{h}\to \fr{b}\to \fr{b}/[\fr{b},\fr{b}]\to\callH.
+\end{equation}
+Remember that $\Ad_g(X_\alpha)=X_{\Ad^*\alpha}$ and since $[\fr{b},\fr{b}]$ is the nilradical of $\fr{b}$, for any 
+different choice of borel subalgebra $\fr{b}^\prime\supset\fr{h}$, we have a bijection 
+$\Delta_+\overset{\Ad^*_g}{\rightarrow}\Delta_+^\prime$. Furthermore, by lemma 3.1.10 of \cite{chriss1997representation}, 
+we know that $g\in W_T$. Denote $w_\alpha$ the element of $W_T$ such that $\Ad_{w_\alpha}^*=r_\alpha$, then 
+$c_g:w_\alpha\mapsto gw_\alpha g^{-1}=w_{\Ad_g^*\alpha}$. So the induced isomorphisms of concrete Weyl groups 
+\begin{equation}
+    \langle w_\alpha: \alpha\in\Delta\rangle \cong \langle w_{\alpha^\prime}:\alpha^\prime\in\Delta^\prime\rangle 
+\end{equation} 
+is compatible with $\phi_{\fr{b}\fr{b}^\prime}$.\par 
+
+The ideia of the abstract Cartan subalgebra is to do all the calculations without choosing an ``orientation'' 
+$(\fr{h},\fr{b})$.
+
+\begin{remark}
+    If $V$ is a vector space, we define $\bbC[V]=\text{Sym}(V^*)$.
+\end{remark}
+
+\begin{dang}
+    \begin{theorem}
+        (Chevalley restriction theorem). The restriction map $\bbC[\fr{g}]^G\rightarrow\bbC[\fr{h}]^W$
+        gives an isomorphism of algebras. 
+    \end{theorem}
+\end{dang}
+Proof: To see injectivity we observe that $P|_{\fr{h}}=0\Rightarrow P|_{\fr{g}^{\text{sr}}}=0$ by $G-$invariance. 
+But $\fr{g}^{\text{sr}}\subset \fr{g}$ is dense, then $P=0$. Now, to prove that this map is surjective, 
+we divide the proof in some steps.
+\begin{itemize}
+    \item[(1)] First we observe that $\text{Sym}^k(\fr{h}^*)=\text{Span}\{\alpha^k:\alpha\in\fr{h}^*\}$ by polarization 
+    identity. Now we claim we can take the span over the set $\Lambda^+$ where 
+    $\Lambda^+=\bbZ_{\geq0}\overline{\omega}_1+\cdots+\bbZ_{\geq0}\overline{\omega}_n$ is the set of dominant weights 
+    of $\fr{g}$ with respect to $\fr{h}$. We can verify that $I(\Lambda^+)=(0)$, so any 
+    linear functional $L$ such that $L|_{\Lambda^+}=0$ must be zero. Now, if 
+    $\{\lambda^k:\lambda\in\Lambda^+\}$ is a proper subspace, then there exists a nonzero linear functional 
+    $L\in (\text{Sym}^k(\fr{h}^*))\setminus0$ such that $L(\lambda^k)=L(\lambda)^k=0$, so $L\in I(\Lambda^+)=(0)$
+    which is a contradiction.\par 
+    Now, by averaging we obatin a surjective map $\bbC[\fr{h}]\to \bbC[\fr{h}]^W$ which sends 
+    $\lambda^k\mapsto \frac{1}{|W|}\sum_{\nu\in W\lambda}\nu^k$, so we see that 
+    $\bbC[\fr{h}]^W=\text{Span}\{S_{\lambda,k}:\lambda\in\Lambda^+\}$ where $S_{\lambda,k}=\sum_{\nu\in W\lambda}\nu^k$.
+    \item[(2)] Define $F_{\lambda,k}:\fr{g}\to\bbC$ defined by 
+    $F_{\lambda,k}(X)=\Tr_{L(\lambda)}(X^k)$ for $\lambda\in\Lambda^+$. It's clearly a $G$-invariant polynomial. Moreover, if 
+    $H\in\fr{h}$, then $F_{\lambda,k}(H)=\sum_{\mu\leq\lambda}\dim L(\lambda)_\mu \mu^k(H)$ because of the weight decomposition
+    \begin{equation}
+        L(\lambda)=\bigoplus_{\mu\leq\lambda}L(\lambda)_\mu.
+    \end{equation}
+    Therefore $F_{\lambda,k}|_{\fr{h}^*}=\sum_{\mu\leq\lambda}m_{\lambda\mu}\mu^k,\;m_{\lambda\lambda}=1$. 
+    Furthermore
+    \begin{equation}
+        \dim L(\lambda)_{w(\mu)}=\dim L(\lambda)_\mu,\;\forall w\in W.
+    \end{equation}
+    So by applying the averaging operator we get 
+    \begin{equation}
+        F_{\lambda,k}|_{\fr{h}} = \sum_{\mu\leq\lambda}m_{\lambda\mu}S_{\mu,k},\;m_{\lambda\lambda}=1.
+    \end{equation}
+    Now, since $(m_{\lambda\mu})$ is triangular, we can invert it to 
+    obtain $S_{\mu,k}\in\text{Span}\{F|_{\lambda,k}:\lambda\in\Lambda^+\}\subset\text{Im}(\text{Res})$.
+\end{itemize}
+\qed
+\begin{example}
+    \TODO calculate $F_{\lambda,k}$ for $\fr{g}=\fr{sl}_2$.
+\end{example}
+It's a fact that $\bbC[\fr{h}]^W$ is a free polynomial algebra (think the case of $\fr{sl}_n$ where we get the ring 
+of symmetric polynomials), so $\text{Specm}(\bbC[\fr{h}]^W)$ is an affine plane. The inverse morphism 
+$\bbC[\fr{h}]^w\to \bbC[\fr{g}]^G\hookrightarrow \bbC[\fr{g}]$, induces a morphism of algebraic varieties 
+\begin{equation}
+    \rho: \fr{g}\to \text{Specm}(\bbC[\fr{h}]^W).
+\end{equation}
+
+\section{Nilpotent cone}
+\section{The steinberg Variety}
+\section{Lagrangian constructio of the Weyl group}
+\section{Irreducible representations of the Weyl group}

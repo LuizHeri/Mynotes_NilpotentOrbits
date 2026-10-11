@@ -9,38 +9,43 @@
 \contentsline {subsection}{\numberline {1.4.2}Spectral decomposition for nilpotent subalgebras}{18}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}Regular elements of a Lie algebra}{19}{subsection.1.4.3}%
 \contentsline {subsection}{\numberline {1.4.4}Existence of Cartan subalgebras}{21}{subsection.1.4.4}%
-\contentsline {section}{\numberline {1.5}Structural theory of semisimple Lie algebras}{23}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Triangular decomposition of semisimple Lie algebras}{23}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Maximal toral subalgebras in semisimple Lie algebras}{26}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.5}Structural theory of semisimple Lie algebras}{24}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Triangular decomposition of semisimple Lie algebras}{24}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Maximal toral subalgebras in semisimple Lie algebras}{27}{subsection.1.5.2}%
 \contentsline {subsection}{\numberline {1.5.3}Another definition of Rank of a Lie algebra}{28}{subsection.1.5.3}%
-\contentsline {section}{\numberline {1.6}Representations of $\mathfrak {sl}_2\mathbb {C}$}{29}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Root systems}{32}{section.1.7}%
-\contentsline {section}{\numberline {1.8}Simple Lie algebras}{40}{section.1.8}%
-\contentsline {subsection}{\numberline {1.8.1}Irreducible root systems}{40}{subsection.1.8.1}%
-\contentsline {subsection}{\numberline {1.8.2}Root systems of simple Lie algebras}{42}{subsection.1.8.2}%
-\contentsline {subsubsection}{Family $A_n$:}{43}{section*.2}%
-\contentsline {subsubsection}{Family $C_n$:}{44}{section*.3}%
-\contentsline {subsubsection}{Family $D_n$:}{46}{section*.4}%
-\contentsline {subsection}{\numberline {1.8.3}Cartan matrices and Dynkin diagrams}{50}{subsection.1.8.3}%
-\contentsline {section}{\numberline {1.9}Cohomology}{57}{section.1.9}%
-\contentsline {chapter}{\numberline {2}Nilpotent orbits}{66}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Adjoint and coadjoint orbits}{66}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Review on Lie groups and infinitesimal actions}{66}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Co-adjoint orbits and KKS form}{69}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Hamiltonian actions}{72}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Marsden, Weinstein, Meyer theorem}{75}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Lazy and sophisticated approach for coadjoint orbits}{75}{subsection.2.1.5}%
-\contentsline {subsection}{\numberline {2.1.6}Standard triples}{77}{subsection.2.1.6}%
-\contentsline {section}{\numberline {2.2}Jacobson-Morozov theorem}{77}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Conjugation theorems}{79}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Weighted Dynkin diagrams}{83}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Regular, subregular and minimal orbits}{88}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Regular and subregular orbit}{88}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Minimal orbit}{89}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Dimension formula for the orbits}{89}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Bala - Carter theory}{91}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Standard slices}{92}{section.2.7}%
-\contentsline {section}{\numberline {2.8}An isomorphism of Weyl groups}{94}{section.2.8}%
-\contentsline {chapter}{\numberline {3}Springer correspondence}{99}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Springer Fibers}{99}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Variety of Borel subalgebras}{99}{subsection.3.1.1}%
+\contentsline {section}{\numberline {1.6}Representations of $\mathfrak {sl}_2\mathbb {C}$}{30}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Root systems}{33}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Simple Lie algebras}{41}{section.1.8}%
+\contentsline {subsection}{\numberline {1.8.1}Irreducible root systems}{41}{subsection.1.8.1}%
+\contentsline {subsection}{\numberline {1.8.2}Root systems of simple Lie algebras}{43}{subsection.1.8.2}%
+\contentsline {subsubsection}{Family $A_n$:}{44}{section*.2}%
+\contentsline {subsubsection}{Family $C_n$:}{45}{section*.3}%
+\contentsline {subsubsection}{Family $D_n$:}{47}{section*.4}%
+\contentsline {subsection}{\numberline {1.8.3}Cartan matrices and Dynkin diagrams}{51}{subsection.1.8.3}%
+\contentsline {section}{\numberline {1.9}Cohomology}{58}{section.1.9}%
+\contentsline {chapter}{\numberline {2}Nilpotent orbits}{67}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Adjoint and coadjoint orbits}{67}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Review on Lie groups and infinitesimal actions}{67}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Co-adjoint orbits and KKS form}{70}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Hamiltonian actions}{73}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Marsden, Weinstein, Meyer theorem}{76}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Lazy and sophisticated approach for coadjoint orbits}{76}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Standard triples}{78}{subsection.2.1.6}%
+\contentsline {section}{\numberline {2.2}Jacobson-Morozov theorem}{78}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Conjugation theorems}{80}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Weighted Dynkin diagrams}{84}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Regular, subregular and minimal orbits}{89}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Regular and subregular orbit}{89}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Minimal orbit}{90}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Dimension formula for the orbits}{90}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Bala - Carter theory}{92}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Standard slices}{93}{section.2.7}%
+\contentsline {section}{\numberline {2.8}An isomorphism of Weyl groups}{95}{section.2.8}%
+\contentsline {chapter}{\numberline {3}Springer correspondence}{100}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Semisimple Lie algebras and flag varieties}{100}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Variety of Borel subalgebras}{100}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Universal resolution of $\mathfrak {g}$}{104}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Nilpotent cone}{107}{section.3.2}%
+\contentsline {section}{\numberline {3.3}The steinberg Variety}{107}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Lagrangian constructio of the Weyl group}{107}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Irreducible representations of the Weyl group}{107}{section.3.5}%

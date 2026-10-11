@@ -45,7 +45,7 @@
 \contentsline {section}{\numberline {3.1}Semisimple Lie algebras and flag varieties}{100}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Variety of Borel subalgebras}{100}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Universal resolution of $\mathfrak {g}$}{104}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Nilpotent cone}{107}{section.3.2}%
-\contentsline {section}{\numberline {3.3}The steinberg Variety}{107}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Lagrangian constructio of the Weyl group}{107}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Irreducible representations of the Weyl group}{107}{section.3.5}%
+\contentsline {section}{\numberline {3.2}Nilpotent cone}{108}{section.3.2}%
+\contentsline {section}{\numberline {3.3}The steinberg Variety}{108}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Lagrangian constructio of the Weyl group}{108}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Irreducible representations of the Weyl group}{108}{section.3.5}%

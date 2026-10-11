@@ -321,10 +321,20 @@ $c_g:w_\alpha\mapsto gw_\alpha g^{-1}=w_{\Ad_g^*\alpha}$. So the induced isomorp
 \begin{equation}
     \langle w_\alpha: \alpha\in\Delta\rangle \cong \langle w_{\alpha^\prime}:\alpha^\prime\in\Delta^\prime\rangle 
 \end{equation} 
-is compatible with $\phi_{\fr{b}\fr{b}^\prime}$.\par 
+is compatible with $\phi_{\fr{b}\fr{b}^\prime}$.
+\begin{dang}
+    \begin{definition}
+        We define the map $\nu:\tilde{\fr{g}}\to\callH:(x,\fr{b})\mapsto x\mod[\fr{b},\fr{b}]$.
+    \end{definition}
+\end{dang}
 
 The ideia of the abstract Cartan subalgebra is to do all the calculations without choosing an ``orientation'' 
-$(\fr{h},\fr{b})$.
+$(\fr{h},\fr{b})$. If we fix an orientation, we have 
+\begin{equation}
+    \nu: \tilde{\fr{g}}\to \fr{b}/[\fr{b},\fr{b}]: (x,gB)\mapsto \Ad_{g^{-1}}(x)\mod[\fr{b},\fr{b}].
+\end{equation}
+By composing with $\fr{b}/[\fr{b},\fr{b}]\to \fr{h}$, we get a morphism $\nu:\tilde{\fr{g}}\to\fr{h}$.
+
 
 \begin{remark}
     If $V$ is a vector space, we define $\bbC[V]=\text{Sym}(V^*)$.
@@ -340,14 +350,19 @@ Proof: To see injectivity we observe that $P|_{\fr{h}}=0\Rightarrow P|_{\fr{g}^{
 But $\fr{g}^{\text{sr}}\subset \fr{g}$ is dense, then $P=0$. Now, to prove that this map is surjective, 
 we divide the proof in some steps.
 \begin{itemize}
-    \item[(1)] First we observe that $\text{Sym}^k(\fr{h}^*)=\text{Span}\{\alpha^k:\alpha\in\fr{h}^*\}$ by polarization 
+    \item[(1)] First we observe that 
+    \begin{equation}
+        \text{Sym}^k(\fr{h}^*)=\text{Span}\{\alpha^k:\alpha\in\fr{h}^*\}\quad(*)
+    \end{equation}
+    by polarization 
     identity. Now we claim we can take the span over the set $\Lambda^+$ where 
     $\Lambda^+=\bbZ_{\geq0}\overline{\omega}_1+\cdots+\bbZ_{\geq0}\overline{\omega}_n$ is the set of dominant weights 
     of $\fr{g}$ with respect to $\fr{h}$. We can verify that $I(\Lambda^+)=(0)$, so any 
     linear functional $L$ such that $L|_{\Lambda^+}=0$ must be zero. Now, if 
     $\{\lambda^k:\lambda\in\Lambda^+\}$ is a proper subspace, then there exists a nonzero linear functional 
-    $L\in (\text{Sym}^k(\fr{h}^*))\setminus0$ such that $L(\lambda^k)=L(\lambda)^k=0$, so $L\in I(\Lambda^+)=(0)$
-    which is a contradiction.\par 
+    $L\in (\text{Sym}^k(\fr{h}^*))\setminus0$ such that $L(\lambda^k)=0$, so the polynomial $P(\alpha)=L(\alpha^k)$ 
+    is in the ideal $I(\Lambda^+)=(0)$. This implies that $P(\alpha) = 0$ and by equation $(*)$ we see that 
+    $P=0\iff L=0$, which is a contradiction.\par 
     Now, by averaging we obatin a surjective map $\bbC[\fr{h}]\to \bbC[\fr{h}]^W$ which sends 
     $\lambda^k\mapsto \frac{1}{|W|}\sum_{\nu\in W\lambda}\nu^k$, so we see that 
     $\bbC[\fr{h}]^W=\text{Span}\{S_{\lambda,k}:\lambda\in\Lambda^+\}$ where $S_{\lambda,k}=\sum_{\nu\in W\lambda}\nu^k$.
@@ -379,6 +394,24 @@ $\bbC[\fr{h}]^w\to \bbC[\fr{g}]^G\hookrightarrow \bbC[\fr{g}]$, induces a morphi
 \begin{equation}
     \rho: \fr{g}\to \text{Specm}(\bbC[\fr{h}]^W).
 \end{equation}
+Now, consider the diagram of $\bbC-$algebras 
+\begin{center}
+    \begin{tikzcd}
+        &\callO_{\tilde{\fr{g}}}(\tilde{\fr{g}})&\\
+        \bbC[\fr{g}]\arrow[ur,"\mu^*"]&&\bbC[\fr{h}]\arrow[ul,swap,"\nu^*"]\\
+        &\bbC[\fr{h}]^W\arrow[ul,"\rho^*"]\arrow[ur,swap,hook,"i"]&
+    \end{tikzcd}
+\end{center}
+It's a fact that this is a commutative diagram (see lemma 3.1.42 of \cite{chriss1997representation}). This induces a 
+commutative diagram 
+    \begin{center}
+        \begin{tikzcd}
+            &\tilde{\fr{g}}\arrow[dl,swap,"\mu"]\arrow[dr,"\nu"]& \\
+        \fr{g}\arrow[dr,swap,"\rho"]&&\fr{h}\arrow[dl,"\pi"]\\
+        &\text{Specm}(\bbC[\fr{h}]^W)&
+        \end{tikzcd}
+    \end{center}
+\textcolor{red}{Can we find an elementary way to prove the commutativity of the above diagram?}
 
 \section{Nilpotent cone}
 \section{The steinberg Variety}

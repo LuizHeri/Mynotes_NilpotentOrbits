@@ -175,7 +175,9 @@ As an example, we will describe the Variety of Borel subalgebras of $\fr{g}=\fr{
     \end{split}
 \end{equation}
 Here we have $F_i\subset \mathbb{C}^n$. 
-For $F = (F_0,F_1,\dots, F_n),g\in G$, we will write $gF=(gF_0,\dots, gF_n)$.
+For $F = (F_0,F_1,\dots, F_n),g\in G$, we let $gF=(gF_0,\dots, gF_n)$, which defines an action of $G$ 
+on the flags $F\in\callF$. Furthermore, this bijection 
+intertwines the $G$-action on the flags and the adjoint action on Borel subalgebras.
 \end{lemma}
 \end{dang}
 Proof: We need to show that $\fr{b}_F$ is a Borel subalgebra. We can choose $A\in GL_n$ such 
@@ -219,7 +221,7 @@ $\Ad_A(x)=\sum f_j(a)x_j$, where $f_j$ are polynomials in the $a$'s.
         \begin{equation}
             \tilde{\fr{g}} = \{(x,\fr{b})\in\fr{g}\times\callB:x\in\fr{b}\}.
         \end{equation}
-        is called the unviersal resolution of $\fr{g}$.
+        is called the universal resolution of $\fr{g}$.
     \end{definition}
 \end{dang}
 To see that $\tilde{g}\subset \fr{g}\times\callB$ is closed, fix $\fr{b}\in\callB$. Then we can identify 
@@ -269,7 +271,8 @@ $\mu^{-1}(x)=\{x\}\times\callB_x$, so $\callB_x=\{\fr{b}:\fr{b}\ni x\}$. It sati
     \item[(b)] $x=\fr{g}^{\text{sr}}\Rightarrow \#\callB_x=\#W$. 
 \end{itemize}
 The second one is a consequence of the fact that $\fr{b}\ni x\iff \fr{h}\subset \fr{b}$ where 
-$\fr{h}$ is a fixed Cartan subaglebra containing $x$ (its exists $x\in\fr{g}^{\text{sr}}$). Let 
+$\fr{h}$ is a fixed Cartan subalgebra containing $x$, because $x\in\fr{g}^{\text{sr}}$ 
+\textcolor{red}{(this is a nontrivial result, check lemma 3.1.4~\cite{chriss1997representation})}. Let 
 $T$ be the maximal torus of $G$ such that $\text{Lie}(T)=\fr{h}$. Then $\fr{b}\supset\fr{h}$ if and only if 
 $\fr{b}$ is a $T$-fixed point of $\callB$. It's a fact that these fixed points are in bijection with 
 elements $W_T$ (see \cite{chriss1997representation} lemma 3.1.10). 
@@ -278,7 +281,7 @@ elements $W_T$ (see \cite{chriss1997representation} lemma 3.1.10).
         Let $\fr{b},\fr{b}^\prime$ be two borel subalgebras. Then there exists a unique 
         $gB\in G/B,\;\text{Lie}(B)=\fr{b}$ such that 
         $\phi_{\fr{b}\fr{b}^\prime}: \fr{b}/[\fr{b},\fr{b}]\to \fr{b}^\prime/[\fr{b}^\prime,\fr{b}^\prime]$
-        maps $x\mod[\fr{b},\fr{b}]\mapsto \Ad_g(x)\mod[\fr{b}^\prime,\fr{b}^\prime]$.
+        maps $x\Mod[\fr{b},\fr{b}]\mapsto \Ad_g(x)\Mod[\fr{b}^\prime,\fr{b}^\prime]$.
     \end{proposition}
 \end{dang}
 Proof: It's a fact in the theory of Lie groups that $N_G(B)=B$, so $\Ad_g(\fr{b})=\fr{b}\iff g\in B$. Furthermore, from the theory 
@@ -288,7 +291,7 @@ $x,y\in \fr{b}$, then
 \begin{equation}
     (\Ad_{\exp(y)}-\mathds{1})x = \sum_{n\geq1}\frac{1}{n!}\ad(y)^nx\in[\fr{b},\fr{b}].
 \end{equation}
-So $\Ad_b(x)=x\mod[\fr{b},\fr{b}]$ for $b\in B$.\qed
+So $\Ad_b(x)=x\Mod[\fr{b},\fr{b}]$ for $b\in B$.\qed
 
 \begin{dang}
     \begin{definition}
@@ -301,7 +304,7 @@ So $\Ad_b(x)=x\mod[\fr{b},\fr{b}]$ for $b\in B$.\qed
 \end{dang}
 
 \begin{remark}
-    Let $\fr{g}$ be a semisimple Lie algebra, then a choice of Cartan subaglebra $\fr{h}\subset\fr{g}$ induces 
+    Let $\fr{g}$ be a semisimple Lie algebra, then a choice of Cartan subalgebra $\fr{h}\subset\fr{g}$ induces 
     a collection of roots given by the weight space decomposition of the adjoint action. Now, let 
     $\fr{h}\subset\fr{b}$ be a Borel subalgebra. It's a fact that $[\fr{b},\fr{b}]$ is the set of 
     all nilpotent elements of $\fr{b}$ and $\fr{b}=\fr{h}\oplus[\fr{b},\fr{b}]$. Furthermore, there exists 
@@ -316,22 +319,43 @@ By fixing a pair $(\fr{h},\fr{b})$, we get a natural isomorphism of vector space
 Remember that $\Ad_g(X_\alpha)=X_{\Ad^*\alpha}$ and since $[\fr{b},\fr{b}]$ is the nilradical of $\fr{b}$, for any 
 different choice of borel subalgebra $\fr{b}^\prime\supset\fr{h}$, we have a bijection 
 $\Delta_+\overset{\Ad^*_g}{\rightarrow}\Delta_+^\prime$. Furthermore, by lemma 3.1.10 of \cite{chriss1997representation}, 
-we know that $g\in W_T$. Denote $w_\alpha$ the element of $W_T$ such that $\Ad_{w_\alpha}^*=r_\alpha$, then 
-$c_g:w_\alpha\mapsto gw_\alpha g^{-1}=w_{\Ad_g^*\alpha}$. So the induced isomorphisms of concrete Weyl groups 
+we know that $\fr{b}^\prime = \Ad_g(\fr{b})$ for $g\in W_T$, where $T$ is a maximal torus such that 
+$\text{Lie}(T)_{\bbC}=\fr{h}$. Denote $w_\alpha$ the element of $W_T$ such that $\Ad_{w_\alpha}^*=r_\alpha$, then 
+$c_g:w_\alpha\mapsto gw_\alpha g^{-1}=w_{\Ad_g^*\alpha}$. So the induced isomorphisms of ``concrete'' Weyl groups 
 \begin{equation}
-    \langle w_\alpha: \alpha\in\Delta\rangle \cong \langle w_{\alpha^\prime}:\alpha^\prime\in\Delta^\prime\rangle 
+    \langle w_\alpha: \alpha\in\Delta\rangle \overset{\cong}{\to} 
+    \langle w_{\alpha^\prime}:\alpha^\prime\in\Delta^\prime\rangle:w_{\alpha}\mapsto w_{\alpha^\prime}. 
 \end{equation} 
-is compatible with $\phi_{\fr{b}\fr{b}^\prime}$.
+is compatible with $\phi_{\fr{b}\fr{b}^\prime}$. In fact, we have 
+\begin{equation}
+    \phi_{\fr{b}\fr{b}^\prime}: \frac{\fr{b}}{[\fr{b},\fr{b}]}\to\frac{\fr{b}^\prime}{[\fr{b}^\prime,\fr{b}^\prime]}: 
+    h_\alpha\Mod[\fr{b},\fr{b}]\mapsto h_{\alpha^\prime}\Mod[\fr{b}^\prime,\fr{b}^\prime]
+\end{equation}
+and $s_\alpha(h_\beta)=h_\beta-2\tfrac{(\alpha,\beta)}{(\beta,\beta)}h_\alpha$, so 
+$\phi_{\fr{b}\fr{b}^\prime}(s_\alpha(h_\beta))=s_{\alpha^\prime}(h_{\beta^\prime})$. This proves that 
+if we choose a Cartan subalgebra $\fr{h}\subset\fr{g}$, then the Weyl group induced by $\fr{h}$ 
+acts on any Borel $\fr{b}\supset\fr{h}$ and is compatible with the morphisms $\phi_{\fr{b}\fr{b^\prime}}$. Therefore, if 
+we fix a Cartan subalgebra, we get an induced action of the abstract Weyl group (associated to the root system 
+induced by $\fr{h}$) on $\callH$.\par 
+The short story is the following, choose a Cartan subalgebra $\fr{h}\subset \fr{g}$ is equivalent to 
+to choose a set of roots of $\fr{g}$ and a Borel $\fr{b}\supset\fr{h}$ is equivalent to choose 
+a set of positive roots and an action of the Weyl group $W_T$ on $\fr{h}$. The discussion below shows that 
+this action does not deppend on the choice of Borel containing the Cartan, so we can talk about the action of 
+the abstract Weyl group $\bbW$. One way to get this identification explictly is through the isomorphism
+\begin{equation}
+    \bbW \cong N_G(\fr{h})/ T,\;\text{Lie}(T) =\fr{h}.
+\end{equation}
+
 \begin{dang}
     \begin{definition}
-        We define the map $\nu:\tilde{\fr{g}}\to\callH:(x,\fr{b})\mapsto x\mod[\fr{b},\fr{b}]$.
+        We define the map $\nu:\tilde{\fr{g}}\to\callH:(x,\fr{b})\mapsto x\Mod[\fr{b},\fr{b}]$.
     \end{definition}
 \end{dang}
 
 The ideia of the abstract Cartan subalgebra is to do all the calculations without choosing an ``orientation'' 
 $(\fr{h},\fr{b})$. If we fix an orientation, we have 
 \begin{equation}
-    \nu: \tilde{\fr{g}}\to \fr{b}/[\fr{b},\fr{b}]: (x,gB)\mapsto \Ad_{g^{-1}}(x)\mod[\fr{b},\fr{b}].
+    \nu: \tilde{\fr{g}}\to \fr{b}/[\fr{b},\fr{b}]: (x,gB)\mapsto \Ad_{g^{-1}}(x)\Mod[\fr{b},\fr{b}].
 \end{equation}
 By composing with $\fr{b}/[\fr{b},\fr{b}]\to \fr{h}$, we get a morphism $\nu:\tilde{\fr{g}}\to\fr{h}$.
 
@@ -339,6 +363,10 @@ By composing with $\fr{b}/[\fr{b},\fr{b}]\to \fr{h}$, we get a morphism $\nu:\ti
 \begin{remark}
     If $V$ is a vector space, we define $\bbC[V]=\text{Sym}(V^*)$.
 \end{remark}
+
+\begin{center}
+    \textcolor{red}{For simplicity, we will work with a fixed orientation $(\fr{h},\fr{b})$ of $\fr{g}$.}
+\end{center}
 
 \begin{dang}
     \begin{theorem}
@@ -390,7 +418,7 @@ we divide the proof in some steps.
 \end{example}
 It's a fact that $\bbC[\fr{h}]^W$ is a free polynomial algebra (think the case of $\fr{sl}_n$ where we get the ring 
 of symmetric polynomials), so $\text{Specm}(\bbC[\fr{h}]^W)$ is an affine plane. The inverse morphism 
-$\bbC[\fr{h}]^w\to \bbC[\fr{g}]^G\hookrightarrow \bbC[\fr{g}]$, induces a morphism of algebraic varieties 
+$\bbC[\fr{h}]^W\to \bbC[\fr{g}]^G\hookrightarrow \bbC[\fr{g}]$, induces a morphism of algebraic varieties 
 \begin{equation}
     \rho: \fr{g}\to \text{Specm}(\bbC[\fr{h}]^W).
 \end{equation}
@@ -414,6 +442,77 @@ commutative diagram
 \textcolor{red}{Can we find an elementary way to prove the commutativity of the above diagram?}
 
 \section{Nilpotent cone}
+Let $\callN$ be the affine variety of nilpotent elements of $\fr{g}$. It's affine because it's 
+defined by the polynomial equation $\ad(X)^{n}=0,\;n=\dim(\fr{g})$.
+We define 
+\begin{equation}
+    \widetilde{\callN} = \mu^{-1}(\callN) = \{(x,\fr{b})\in \callN\times\callB: x\in\fr{b}\}.
+\end{equation}
+We define $G\times_{B}\fr{b} = G\times \fr{b} / B$, where the $B$-action is defined by 
+$b(g,x) = (gb^{-1},\Ad_b(x))$. With this action, we have an isomorphism 
+\begin{equation}
+    G\times_{B}\fr{b} \overset{\cong}{\to}\widetilde{\fr{g}}:(g,x)\mapsto (\Ad_g(x),gB).
+\end{equation}
+In the same way, we have $\widetilde{\callN} \cong G\times_B\fr{n}$ where $\fr{n}=[\fr{b,\fr{b}}]$ is the nilradical 
+of $\fr{b}$.
+
+\begin{example}
+    Let $\fr{g}=\fr{sl}_n$, then $X=\left(\begin{smallmatrix}a&b\\c&-a\end{smallmatrix}\right)\in\callN$ 
+    if and only if $X\sim\left(\begin{smallmatrix}0&1\\0&0\end{smallmatrix}\right)$. 
+    So its eigenvalues must be zero and $P_X(t) = \det(t\text{Id}-X)=t^2-(a^2+bc)=t^2$ if and only if 
+    $a^2+bc=0$. Therefore 
+    \begin{equation}
+        \callN = \{(a,b,c)\in\bbC^3: a^2+bc= 0\}.
+    \end{equation} 
+    Here we identify $\bbC^3\cong \fr{sl}_2$ using the standard basis $\{h,e,f\}$, where $X=ah + be + cf$. 
+    Recall that we can identify $\callB\cong \callF(\bbC^2)\cong\bbP^1$, so 
+    \begin{equation}
+        \widetilde{\callN} = \{(x,gF)\in\callN\times\callF: x gF_1\subset gF_1\}.
+    \end{equation} 
+    If $x\neq0$ is nilpotent, then $x gF_1\subset gF_1$ implies $\text{Im}(x) =gF_1$, because it has a one dimensional image.
+    Now, $x gF_1 = gF_1\Rightarrow \Ad_{g^{-1}}(x)F_1 = F_1\Rightarrow \Ad_{g^{-1}}(x) = \lambda e,\lambda\in\bbC$, so 
+    $x\in\bbC\Ad_g(e)$. Then we get a bijection between lines $gF_1\in\bbP^1$ and lines $\bbC\Ad_g(e)$ in the nilpotent cone. 
+     Therefore 
+     \begin{center}
+        \begin{tikzcd}
+            &\widetilde{\callN} = \{(x,\bbC\Ad_g(e)) \in \callN\times\bbP^1: x\in\bbC\Ad_g(e)\}\arrow[dl]\arrow[dr]& \\
+            \callN&& \bbP^1
+        \end{tikzcd}
+     \end{center}
+\end{example}
+
+\begin{dang}
+    \begin{proposition}
+    The nilpotent cone $\callN$ is an irreducible variety.        
+    \end{proposition}
+\end{dang}
+Proof: Fix a borel subalgebra $\fr{b}$ and let $\fr{n}$ be its nilpotent radical. Then we have a surjective map 
+$G\times\fr{n}\to \callN: (g,X)\mapsto \Ad_g(X)$. Since $G\times\fr{n}$ is irreducible, the closure of its image 
+must be irreducible.\qed 
+
+\begin{dang}
+    \begin{proposition}
+        The complex manifold $\widetilde{\callN}\cong G\times_B\fr{n}$ is an irreducible algebraic 
+        variety. 
+    \end{proposition}
+\end{dang}
+Proof: We have that $\widetilde{\callN} \subset G\times \fr{n}$ is closed. Furthermore, the map 
+$G\times\fr{n}\to \widetilde{\callN}:(g,X)\mapsto (gB,\Ad_g(X))$ is surjective. \qed
+
+\begin{dang}
+    \begin{proposition}
+        We have $\dim\callN = \dim(\fr{g})-\text{Rank}(\fr{g})$.
+    \end{proposition}
+\end{dang}
+Proof: This follows because of the fact that the principal (or regular) nilpotent orbit is dense in $\callN$.\qed
+
+\begin{dang}
+    \begin{proposition}
+        The map $\mu:\widetilde{\callN}\to\callN$ is a resolution of singularities.
+    \end{proposition}
+\end{dang}
+\TODO proof
+
 \section{The steinberg Variety}
 \section{Lagrangian constructio of the Weyl group}
 \section{Irreducible representations of the Weyl group}

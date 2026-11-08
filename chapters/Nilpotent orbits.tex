@@ -345,7 +345,7 @@ But we see that
 
 \begin{example}
     A general situation: $(M,\omega)$ is symplectic with $\omega = -d\theta$ exact. Suppose that we have 
-    a $G$ on $M$ such that $\psi_g^*\omega = \omega$. In this case we define 
+    a $G$ on $M$ such that $\psi_g^*\theta = \theta$. In this case we define 
     \begin{equation}
         \iota_{u_M}\theta =  \langle \mu,u\rangle.
     \end{equation}
@@ -620,7 +620,7 @@ Some important results to remember:
     Recall the following calculation:
     \begin{equation}
         \begin{split}
-             \Ad_{\ad(Z)}H&=\exp(\ad(Z))H\\
+             \Ad_{\exp(Z)}H&=\exp(\ad(Z))H\\
               &=\sum_{i\geq0}\frac{1}{i!}\ad(Z)^iH
         \end{split}
     \end{equation} 
@@ -947,7 +947,7 @@ we show that the set $\Pi$ is linearly independent. We prove it in two steps:
 \end{dang}
 Proof: We will construct this isomorphism in several steps:
 \begin{itemize}
-    \item We can transpose the action of $W$ to $\fr{h}$ vi the contragradient representation:
+    \item We can transpose the action of $W$ to $\fr{h}$ via the contragradient representation:
     \begin{equation}
         \langle w\cdot h, \alpha\rangle = \langle h,w^{-1}(\alpha)\rangle.
     \end{equation}
@@ -982,10 +982,6 @@ Proof: We will construct this isomorphism in several steps:
         W\to N_{G_{ad}}(\fr{h}): r_\alpha\mapsto \theta_\alpha
     \end{equation}
     that induces the desired isomorphism.
-
-    \begin{center}
-        \textcolor{red}{We need to be more careful here. See section~(\ref{section: isom of Weyl groups})}
-    \end{center}
 \end{itemize}
 
 Now lets do an example in $\fr{sl}_n$. In this case, the root space is 
@@ -1083,7 +1079,15 @@ Then $\{Y,H,X\}$ forms a $\fr{sl}_2-$triple. The only nontrivial relation is
 In the last equation we only used the fact that $\alpha -\beta$ is never a root for simple roots $\alpha,\beta\in\Pi$. Since 
 $\alpha(H)=2,\;\forall\alpha\in\Pi$, we see that $\alpha(H)\in 2\bbZ,\;\forall\alpha\in\Delta$ and $\fr{g}_1=0$. Therefore 
 $\fr{g}_0=\fr{h}$ and the dimension formula follows. For uniqueness, it can be proven that $\overline{\callO}_X=\N$ the 
-nilpotent cone. This proves uniqueness.\par 
+nilpotent cone.\TODO give a proof of uniqueness (revisite~\cite{collingwood2017nilpotent})\par
+\begin{remark}
+    It can be shown that $\callN$ is na irreducible variety, so $\dim \callN$ is equal to the dimension of the principal 
+    orbit (because any orbit is open in its closure). Therefore we get 
+    \begin{equation}
+        \dim\callN = \dim\fr{g} - \text{Rank}(\fr{g}).
+    \end{equation}
+\end{remark} 
+
 
 The subregular orbit is the unique orbit of dimension $\dim(\fr{g})-\text{Rank}(\fr{g})-2$. See~\cite{collingwood2017nilpotent}
 for its existence and uniqueness.
@@ -1422,7 +1426,8 @@ the maps on the previous diagram intertwines all the actions of $W_T$. Now we ob
 $\text{Lie}(T)\subset \fr{g}_0$ is maximal abelian subalgebra. Moreover, in the complexficiation, we get that 
 $\fr{h}=\text{Lie}(T)_{\bbC}\subset\fr{g}$ is a maximal toral subalgebra (MTS), so it's a Cartan subalgebra.\par 
 
-Lets $\fr{p}$ be a complementary subspace to $\text{Lie}(T)$ in $\fr{g}_0$. It's a fact that 
+Lets $\fr{p}$ be a complementary subspace to $\text{Lie}(T)$ in $\fr{g}_0$ 
+\textcolor{red}{(here is implicity a choice of a Borel)}. It's a fact that 
 $\Ad_T$ restricts to $\fr{p}$, so the decomposition $\fr{g}=\fr{h}\oplus \fr{p}_{\bbC}$ is fixed 
 by the complexfied action of $\Ad_T$ on $\fr{g}$. Let 
 \begin{equation}
